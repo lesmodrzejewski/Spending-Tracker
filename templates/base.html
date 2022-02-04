@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending tracker</title>
+</head>
+<body>
+    <head>
+        <h1><a href="/transaction">Home</a></h1>
+        <h2>Beware of little expenses, a small leak will sink a great ship</h2>
+        <h3>Benjamin Franklin</h3>
+    </head>
+    <main>
+        <aside>
+            <nav>
+                <h2>Add</h2>
+                <button>transaction</button>
+                <button>tag</button>
+                <button>merchant</button>
+                <h2>Edit</h2>
+                <button>spending</button>
+                <button>merchant</button>
+            </nav>
+            <section>
+                {% block content %}
+                {% endblock %}
+            </section>
+        </aside>
+
+
+
+    </main>
+    <aside>
+        <nav>
+            <h2>Add</h2>
+            <button>transaction</button>
+            <button>tag</button>
+            <button>merchant</button>
+            <h2>Edit</h2>
+            <button>spending</button>
+            <button>merchant</button>
+        </nav>
+    </aside>
+
+
+
+</body>
+</html>
