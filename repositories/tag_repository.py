@@ -1,3 +1,4 @@
+from optparse import Values
 from db.run_sql import run_sql
 from models.merchant import Merchant
 
@@ -21,3 +22,13 @@ def select_all():
         tag = Tag(row['name'], row['id'])
         tags.append(tag)
     return tags
+
+def select(id):
+    tag = None
+    sql = "SELECT * FROM tags WHERE id = '%s"
+    value = [id]
+    result = run_sql(sql, value)
+
+    if result is not None:
+        tag = Tag(result['name'], result['id'])
+    return tag

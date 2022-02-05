@@ -27,8 +27,8 @@ def select_all():
 def select(id):
     merchant = None
     sql = "SELECT * FROM merchants WHERE ID = '%s'"
-    values = [id]
-    result = run_sql(sql, values)
+    value = [id]
+    result = run_sql(sql, value)
 
     if result is not None:
         merchant = Merchant(result['name'], result['id'])
