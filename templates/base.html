@@ -8,26 +8,30 @@
 </head>
 <body>
     <head>
-        <h1><a href="/transaction">Home</a></h1>
-        <h2>Beware of little expenses, a small leak will sink a great ship</h2>
-        <h3>Benjamin Franklin</h3>
+        <ul>
+            <li><a href="/"></a>Home</li>
+            <li><a href="/transactions"></a>Show transactions</li>
+            <li><a href="/merchants"></a>Show merchants</li>
+            <li><a href="/tags"></a>Show tags</li>
+        </ul>
+        <a href="/transaction">Home</a>
+        <!-- <h2>Beware of little expenses, a small leak will sink a great ship</h2> -->
+        <!-- <h3>Benjamin Franklin</h3> -->
     </head>
     <main>
         <aside>
-            <nav>
-                <h2>Add</h2>
-                <button>transaction</button>
-                <button>tag</button>
-                <button>merchant</button>
-                <h2>Edit</h2>
-                <button>spending</button>
-                <button>merchant</button>
-            </nav>
-            <section>
-                {% block content %}
-                {% endblock %}
-            </section>
+            <h2>Add</h2>
+            <button>transaction</button>
+            <button>tag</button>
+            <button>merchant</button>
+            <h2>Edit</h2>
+            <button>spending</button>
+            <button>merchant</button>
         </aside>
+        <section>
+            {% block content %}
+            {% endblock %}
+        </section>
     </main>
 </body>
 </html>
