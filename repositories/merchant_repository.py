@@ -1,3 +1,4 @@
+from controllers.merchants_controller import merchants
 from db.run_sql import run_sql
 
 from models.merchant import Merchant
@@ -22,4 +23,16 @@ def select_all():
         merchant = Merchant(row['name'], row['id'])
         merchants.append(merchant)
     return merchants
+
+def select(id):
+    merchant = None
+    sql = "SELECT * FROM merchants WHERE ID = '%s'"
+    values = [id]
+    result = run_sql(sql, values)
+
+    if result is not None:
+        merchant = Merchant(result['name'], result['id'])
+    return merchant
+
+
 
