@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS transactions;
-DROP TABLE IF EXISTS merchands;
+DROP TABLE IF EXISTS merchants;
 DROP TABLE IF EXISTS tags;
 
-CREATE TABLE merchands (
+CREATE TABLE merchants (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255)
 );
