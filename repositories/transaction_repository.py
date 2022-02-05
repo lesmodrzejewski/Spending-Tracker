@@ -19,4 +19,19 @@ def save(transaction):
     transaction.id = id
     return transaction
 
+def select_all():
+    transactions = []
+
+    sql = "SELECT * FROM transactions"
+    results = run_sql(sql)
+
+    for row in results:
+        merchant = merchant_repository.select(row['merchant_id'])
+        tag = tag_repository.select(row['tag_id'])
+        transaction = Transaction(row['amount'], merchant, tag, row['id'])
+        transactions.append(transaction)
+    return transactions
+
+
+
 
