@@ -40,10 +40,19 @@ a:hover {
     border-bottom: 1px solid #f3f3f3;
 }
 
+nav {
+    width: 90vw;
+    margin: auto;
+}
+
 main {
     display: flex;
     margin-top: 1px;
     height: 80vh;
+    width: 90vw;
+    margin: auto;
+    border: 1px solid #f3f3f3;
+
 }
 
 aside {
@@ -115,7 +124,6 @@ aside > h2 {
     width: 90%;
     height: 100%;
     margin: auto;
-    border: 1px solid #f3f3f3;
     border-radius: 5px;;
 }
 
@@ -127,17 +135,36 @@ aside > h2 {
 }
 
 /* ---------------TAGS------------------------ */
+
 #tags {
     font-size: 2rem;
     position: relative;
     width: 90%;
     height: 100%;
     margin: auto;
-    border: 1px solid #f3f3f3;
     border-radius: 5px;;
 }
 
 .tags-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ---------------TRANSACTIONS------------------------ */
+
+#transactions {
+    font-size: 2rem;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;;
+}
+
+.transactions-list {
     position: absolute;
     top: 50%;
     left: 50%;

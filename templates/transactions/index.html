@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Transactions List</h1>
+<section id="transactions">
+    <div class="transactions-list">
+        <h1>Transactions List</h1>
 
-{% for transaction in transactions %}
-
-    <p>{{transaction.id}} and {{transaction.amount}}</p>
+        {% for transaction in transactions %}
     
-{% endfor %}
+        <p>{{transaction.id}} and {{transaction.amount}}</p>
+        
+        {% endfor %}
+    </div>
+
+
+</section>
     
 {% endblock %}
