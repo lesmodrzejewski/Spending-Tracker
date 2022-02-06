@@ -1,9 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Tags list:</h1>
-    {% for tag in tags %}
-        <div>
-            {{tag.name}}
-        </div>
-    {% endfor %}
+<section id="tags">
+    <div class="tags-list">
+        <h1>Tags list:</h1>
+        {% for tag in tags %}
+            <div>
+                {{tag.name}}
+            </div>
+        {% endfor %} 
+    </div>
+
+</section>
+
 {% endblock %}

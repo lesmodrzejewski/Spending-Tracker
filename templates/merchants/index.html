@@ -1,12 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Merchants List</h1>
+<section id="merchants">
+    <div class="merchant-list">
+        <h1>Merchants List:</h1>
 
-    {% for merchant in merchants  %}
-        <div>
-            {{merchant.name}}
-        </div>
-        
-    {% endfor %}
+        {% for merchant in merchants  %}
+            <div>
+                {{merchant.name}}
+            </div>
+        {% endfor %}  
+    </div>
+
+
+
+</section>
+
     
 {% endblock %}
