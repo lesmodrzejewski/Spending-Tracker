@@ -1,4 +1,3 @@
-from unittest import result
 from db.run_sql import run_sql
 from models.merchant import Merchant
 
@@ -31,6 +30,8 @@ def select_all():
         transaction = Transaction(row['amount'], merchant, tag, row['id'])
         transactions.append(transaction)
     return transactions
+
+
 
 
 
