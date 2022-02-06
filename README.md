@@ -1,1 +1,1 @@
-# code-clan-python-flask-sql-full-stack-spending-tracker-project
+# code-clan-python-project-expense-tracker
