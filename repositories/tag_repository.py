@@ -25,7 +25,7 @@ def select_all():
 
 def select(id):
     tag = None
-    sql = "SELECT * FROM tags WHERE id = '%s"
+    sql = "SELECT * FROM tags WHERE id = '%s'"
     values = [id]
     result = run_sql(sql, values)[0]
 

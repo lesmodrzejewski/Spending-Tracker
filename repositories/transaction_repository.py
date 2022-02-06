@@ -25,6 +25,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
+        print(row)
         merchant = merchant_repository.select(row['merchant_id'])
         tag = tag_repository.select(row['tag_id'])
         transaction = Transaction(row['amount'], merchant, tag, row['id'])
