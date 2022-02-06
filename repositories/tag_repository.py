@@ -23,12 +23,16 @@ def select_all():
         tags.append(tag)
     return tags
 
-def select(id):
-    tag = None
-    sql = "SELECT * FROM tags WHERE id = '%s"
-    values = [id]
-    result = run_sql(sql, values)[0]
+# def select(id):
+#     tag = None
+#     sql = "SELECT * FROM tags WHERE id = '%s"
+#     values = [id]
+#     result = run_sql(sql, values)[0]
 
-    if result is not None:
-        tag = Tag(result['name'], result['id'])
-    return tag
+#     if result is not None:
+#         tag = Tag(result['name'], result['id'])
+#     return tag
+
+def delete_all():
+    sql = "DELETE FROM tags"
+    run_sql(sql)
