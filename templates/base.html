@@ -4,34 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mukta:wght@200;400&family=Outfit:wght@100;400&family=Roboto:wght@100&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Spending tracker</title>
 </head>
 <body>
     <head>
-        <ul>
-            <li><a href="/"></a>Home</li>
-            <li><a href="/transactions"></a>Show transactions</li>
-            <li><a href="/merchants"></a>Show merchants</li>
-            <li><a href="/tags"></a>Show tags</li>
-        </ul>
-        <a href="/transaction">Home</a>
-        <!-- <h2>Beware of little expenses, a small leak will sink a great ship</h2> -->
-        <!-- <h3>Benjamin Franklin</h3> -->
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/transactions">Show transactions</a></li>
+                <li><a href="/merchants">Show merchants</a></li>
+                <li><a href="/tags">Show tags</a></li>
+            </ul>
+        </nav>
+
     </head>
     <main>
         <aside>
+
             <h2>Add</h2>
-            <button>transaction</button>
-            <button>tag</button>
-            <button>merchant</button>
+            <div class="add-buttons">
+                <button>transaction</button>
+                <button>tag</button>
+                <button>merchant</button>
+            </div>
+
             <h2>Edit</h2>
-            <button>tag</button>
-            <button>merchant</button>
+            <div class = "edit-buttons">
+                <button>tag</button>
+                <button>merchant</button>
+            </div>
+
         </aside>
-        <section>
+        <section id="right-side">
             {% block content %}
             {% endblock %}
         </section>
     </main>
+    <footer><p>Leszek Modrzejewski</p></footer>
 </body>
 </html>

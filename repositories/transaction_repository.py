@@ -33,7 +33,7 @@ def select_all():
 
 
 def delete_all():
-    sql = "DELETE FROM transactons"
+    sql = "DELETE FROM transactions"
     run_sql(sql)
 
 

@@ -24,15 +24,15 @@ def select_all():
         merchants.append(merchant)
     return merchants
 
-# def select(id):
-#     merchant = None
-#     sql = "SELECT * FROM merchants WHERE id = '%s'"
-#     values = [id]
-#     result = run_sql(sql, values)[0]
+def select(id):
+    merchant = None
+    sql = "SELECT * FROM merchants WHERE id = '%s'"
+    values = [id]
+    result = run_sql(sql, values)[0]
 
-#     if result is not None:
-#         merchant = Merchant(result['name'], result['id'])
-#     return merchant
+    if result is not None:
+        merchant = Merchant(result['name'], result['id'])
+    return merchant
 
 def delete_all():
     sql = "DELETE FROM merchants"
