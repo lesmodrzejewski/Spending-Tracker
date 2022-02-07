@@ -33,6 +33,6 @@ def select(id):
         tag = Tag(result['name'], result['id'])
     return tag
 
-def delete_all():
-    sql = "DELETE FROM tags"
-    run_sql(sql)
+# def delete_all():
+#     sql = "DELETE FROM tags"
+#     run_sql(sql)

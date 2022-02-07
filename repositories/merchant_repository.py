@@ -34,9 +34,9 @@ def select(id):
         merchant = Merchant(result['name'], result['id'])
     return merchant
 
-def delete_all():
-    sql = "DELETE FROM merchants"
-    run_sql(sql)
+# def delete_all():
+#     sql = "DELETE FROM merchants"
+#     run_sql(sql)
 
 
 

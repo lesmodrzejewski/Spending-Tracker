@@ -6,10 +6,6 @@ import repositories.merchant_repository as merchant_repository
 import repositories.tag_repository as tag_repository
 import repositories.transaction_repository as transaction_repository
 
-# merchant_repository.delete_all()
-# tag_repository.delete_all()
-# transaction_repository.delete_all()
-
 merchant_1 = Merchant("Asda")
 m1 = merchant_repository.save(merchant_1)
 m3 = merchant_repository.select_all()
