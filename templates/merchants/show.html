@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <p>{{merchant.name}}</p>
+    <p><a href="/merchants/{{merchant.id}}/edit">Edit Merchant</a></p>
+</div>
+    
+{% endblock %}

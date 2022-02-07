@@ -6,13 +6,10 @@
 
         {% for merchant in merchants  %}
             <div>
-                {{merchant.name}}
+                <a href="/merchants/{{merchant.id}}">{{merchant.name}}</a>
             </div>
         {% endfor %}  
     </div>
-
-
-
 </section>
 
     

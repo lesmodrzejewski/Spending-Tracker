@@ -1,3 +1,4 @@
+from asyncio.base_tasks import _task_print_stack
 from flask import Flask, render_template, Blueprint, request, redirect
 from models.merchant import Merchant
 
@@ -10,6 +11,17 @@ def merchants():
     merchants = merchant_repository.select_all()
     return render_template('merchants/index.html', merchants=merchants)
 
+
+# SHOW ONE MERCHANT
+
+@merchants_blueprint.route("/merchants/<id>")
+def show_merchant(id):
+    merchant = merchant_repository.select(id)
+    return render_template('/merchants/show.html', merchant = merchant)
+
+
+# ADD NEW MERCHANT
+
 @merchants_blueprint.route("/merchants/new")
 def add_new_merchant():
     return render_template("merchants/new.html")
@@ -20,3 +32,22 @@ def create_task():
     merchant = Merchant(name)
     merchant_repository.save(merchant)
     return redirect('/merchants')
+
+# EDIT MERCHANT
+
+@merchants_blueprint.route("/merchants/<id>/edit")
+def edit_merchant(id):
+    merchant = merchant_repository.select(id)
+    return render_template('merchants/edit.html', merchant=merchant)
+
+@merchants_blueprint.route("/merchants/<id>", methods=['POST'])
+def update_merchant(id):
+    name = request.form['edit-merchant']
+    merchant = Merchant(name, id)
+    merchant_repository.update(merchant)
+    return redirect('/merchants')
+
+
+
+
+
