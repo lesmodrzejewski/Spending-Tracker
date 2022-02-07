@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>add transaction</h1>
+
+<form action="/transactions" method="post">
+
+    <div>
+        <label for="amount">amount</label>
+        <input type="text" name="amount" id="amount">
+    </div>
+
+    <div>
+        <label for="merchant-select">merchant</label>
+        <select name="merchant_id" id="merchant_select">
+            {% for merchant in merchants %}
+            <option value="{{merchant.id}}">{{merchant.name}}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div>
+        <label for="tag-select">tag</label>
+        <select name="tag_id" id="tag-select">
+            {% for tag in tags %}
+                <option value="{{tag.id}}">{{tag.name}}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button type="submit">Add New Transaction</button>
+
+</form>
+    
+{% endblock %}

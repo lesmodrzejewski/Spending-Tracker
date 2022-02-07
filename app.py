@@ -1,4 +1,3 @@
-import imp
 from flask import Flask, render_template
 from controllers.transactions_controller import transactions_blueprint
 from controllers.merchants_controller import merchants_blueprint

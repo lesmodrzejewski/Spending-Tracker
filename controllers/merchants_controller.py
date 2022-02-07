@@ -1,4 +1,3 @@
-from re import S
 from flask import Flask, render_template, Blueprint, request, redirect
 from models.merchant import Merchant
 

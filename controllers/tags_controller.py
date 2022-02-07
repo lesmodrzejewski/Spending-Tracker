@@ -1,5 +1,4 @@
 from flask import Blueprint, Flask, redirect, render_template, request
-from controllers.merchants_controller import merchants
 from models.tag import Tag
 
 from repositories import tag_repository

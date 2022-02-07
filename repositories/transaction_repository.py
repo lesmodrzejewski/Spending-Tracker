@@ -33,9 +33,9 @@ def select_all():
     return transactions
 
 
-# def delete_all():
-#     sql = "DELETE FROM transactions"
-#     run_sql(sql)
+def delete_all():
+    sql = "DELETE FROM transactions"
+    run_sql(sql)
 
 
 
