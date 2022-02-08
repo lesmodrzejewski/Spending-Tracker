@@ -88,7 +88,8 @@ aside > h2 {
 
 #add-container {
     position: relative;
-    width: 20vw;
+    width: 30vw;
+    /* border: 1px solid red */
 }
 
 #right-side {
