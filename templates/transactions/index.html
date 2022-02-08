@@ -5,15 +5,24 @@
     <div class="transactions-list">
         <h1>Transactions List</h1>
         <div class="transaction-items">
-            {% for transaction in transactions %}
-
-            <div class="transaction-item">
-                <p>{{transaction.amount}}</p>
-                <p>{{transaction.merchant.name}}</p>
-                <p>{{transaction.tag.name}}</p>
-            </div>
-
-        {% endfor %} 
+            <table>
+                <thead>
+                    <tr>
+                        <th>amount</th>
+                        <th>merchant</th>
+                        <th>tag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        {% for transaction in transactions %}
+                        <tr>
+                            <td>{{transaction.amount}}</td>
+                            <td>{{transaction.merchant.name}}</td>
+                            <td>{{transaction.tag.name}}</td>
+                        </tr>
+                        {% endfor %} 
+                </tbody>
+            </table>
         </div>
 
 

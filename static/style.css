@@ -163,3 +163,7 @@ aside > h2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.transaction-item {
+    display: flex;
+}
