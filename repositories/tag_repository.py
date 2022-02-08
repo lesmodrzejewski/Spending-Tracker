@@ -5,7 +5,7 @@ from models.merchant import Merchant
 from models.tag import Tag
 
 def save(tag):
-    sql = "INSERT INTO tags name VALUES (%s) RETURNING *"
+    sql = "INSERT INTO tags (name) VALUES (%s) RETURNING *"
     values = [tag.name]
     results = run_sql(sql, values)
     id = results[0]['id']

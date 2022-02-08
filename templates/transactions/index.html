@@ -3,24 +3,30 @@
 
 <section id="transactions">
     <div class="transactions-list">
-        <h1>Transactions List</h1>
+        <h1>Transaction List</h1>
         <div class="transaction-items">
             <table>
                 <thead>
                     <tr>
-                        <th>amount</th>
-                        <th>merchant</th>
-                        <th>tag</th>
+                        <th class="table-head">Amount</th>
+                        <th class="table-head">Merchant</th>
+                        <th class="table-head">Tag</th>
                     </tr>
                 </thead>
                 <tbody>
                         {% for transaction in transactions %}
                         <tr>
-                            <td>{{transaction.amount}}</td>
                             <td>{{transaction.merchant.name}}</td>
                             <td>{{transaction.tag.name}}</td>
+                            <td>{{transaction.amount}}</td>
                         </tr>
                         {% endfor %} 
+                        <tr>
+                            <td class="table-total">Total Amount:</td> 
+                            <td class="table-total"></td>
+                            <td class="table-total">{{sum}}</td>
+
+                        </tr>
                 </tbody>
             </table>
         </div>

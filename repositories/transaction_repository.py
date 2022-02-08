@@ -19,6 +19,14 @@ def save(transaction):
     transaction.id = id
     return transaction
 
+def sum_up(transations):
+    sum = 0
+    for transaction in transations:
+        sum += transaction.amount
+    return sum
+
+
+
 def select_all():
     transactions = []
 
