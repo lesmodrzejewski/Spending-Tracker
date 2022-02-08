@@ -2,35 +2,36 @@
 
 {% block content %}
 
-<h1>add transaction</h1>
+<section id="add-transaction-section">
+    <div id="add-transaction-container">
 
-<form action="/transactions" method="post">
-
-    <div>
-        <label for="amount">amount</label>
-        <input type="text" name="amount" id="amount">
+        <form action="/transactions" method="post">
+        
+            <div id="add-transaction-form">
+                <label class="label" for="amount">amount</label>
+                <input type="text" name="amount" id="amount">
+        
+        
+                <label class="label" for="merchant-select">merchant</label>
+                <select name="merchant_id" id="merchant_select">
+                    {% for merchant in merchants %}
+                    <option value="{{merchant.id}}">{{merchant.name}}</option>
+                    {% endfor %}
+                </select>
+        
+                <label class="label" for="tag-select">tag</label>
+                <select name="tag_id" id="tag-select">
+                    {% for tag in tags %}
+                        <option value="{{tag.id}}">{{tag.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        
+            <button id="add-transaction-button" type="submit">Add New Transaction</button>
+        
+        </form>
     </div>
 
-    <div>
-        <label for="merchant-select">merchant</label>
-        <select name="merchant_id" id="merchant_select">
-            {% for merchant in merchants %}
-            <option value="{{merchant.id}}">{{merchant.name}}</option>
-            {% endfor %}
-        </select>
-    </div>
-
-    <div>
-        <label for="tag-select">tag</label>
-        <select name="tag_id" id="tag-select">
-            {% for tag in tags %}
-                <option value="{{tag.id}}">{{tag.name}}</option>
-            {% endfor %}
-        </select>
-    </div>
-
-    <button type="submit">Add New Transaction</button>
-
-</form>
+</section>
     
 {% endblock %}

@@ -2,12 +2,15 @@
 {% block content %}
 
 <form action="/tags" method="post">
-    <div>
-        <label for="add-new-tag-name">New Tag</label>
-        <input type="text" name="add-new-tag-name" id="add-new-tag-name">
+    <div id="add-tag-input">
+        <div>
+            <label for="add-new-tag-name">New Tag</label>
+            <input type="text" name="add-new-tag-name" id="add-new-tag-name">
+        </div>
+
+        <button id="add-tag-button" type="submit">Add New Tag</button>
     </div>
 
-    <button type="submit">Add New Tag</button>
 </form>
     
 {% endblock %}

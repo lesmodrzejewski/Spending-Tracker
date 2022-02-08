@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<form action="/merchants" method="post">
+<form id="add-merchant" action="/merchants" method="post">
+    <div id="add-merchant-input">
+        <div>
+            <label for="add-new-merchant-name">Name:</label>
+            <input type="text" name="add-new-merchant-name" id="add-new-merchant-name">
+        </div>
 
-    <div>
-        <label for="add-new-merchant-name">Name:</label>
-        <input type="text" name="add-new-merchant-name" id="add-new-merchant-name">
+        <button id="add-merchant-button" type="submit">Add merchant</button> 
     </div>
-
-    <button type="submit">Add merchant</button>
 
 </form>
     
