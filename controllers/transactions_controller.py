@@ -10,10 +10,14 @@ from repositories import transaction_repository
 
 transactions_blueprint = Blueprint('transactions', __name__)
 
+# SHOW ALL TRANSACTIONS
+
 @transactions_blueprint.route('/transactions')
 def transactions():
     transactions = transaction_repository.select_all()
     return render_template('transactions/index.html', transactions = transactions)
+
+# ADD NEW TRANSACTION
 
 @transactions_blueprint.route('/transactions/new')
 def add_new_transaction():

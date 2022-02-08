@@ -1,3 +1,4 @@
+from cProfile import run
 from db.run_sql import run_sql
 from models.merchant import Merchant
 
@@ -31,6 +32,18 @@ def select_all():
         transaction = Transaction(row['amount'], merchant, tag, row['id'])
         transactions.append(transaction)
     return transactions
+
+# def select(id):
+#     transaction = None
+#     sql = "SELECT * FROM transactions WHERE id = %s"
+#     values = [id]
+#     result = run_sql(sql, values)[0]
+
+#     if result is not None:
+#         merchant = merchant_repository.select(result['merchant_id'])
+#         tag = tag_repository.select(result['tag_id'])
+#         transaction = Transaction(result['amount'], merchant, tag, result['id'])
+#     return transaction
 
 
 def delete_all():

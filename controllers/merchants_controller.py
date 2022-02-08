@@ -6,6 +6,8 @@ from repositories import merchant_repository
 
 merchants_blueprint = Blueprint('merchants', __name__)
 
+# SHOW ALL MERCHANTS
+
 @merchants_blueprint.route('/merchants')
 def merchants():
     merchants = merchant_repository.select_all()
@@ -46,8 +48,6 @@ def update_merchant(id):
     merchant = Merchant(name, id)
     merchant_repository.update(merchant)
     return redirect('/merchants')
-
-
 
 
 

@@ -5,7 +5,7 @@
         <h1>Tags list:</h1>
         {% for tag in tags %}
             <div>
-                {{tag.name}}
+                <a href="/tags/{{tag.id}}">{{tag.name}}</a>
             </div>
         {% endfor %} 
     </div>

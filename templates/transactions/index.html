@@ -4,14 +4,20 @@
 <section id="transactions">
     <div class="transactions-list">
         <h1>Transactions List</h1>
+        <div class="transaction-items">
+            {% for transaction in transactions %}
 
-        {% for transaction in transactions %}
-    
-        <p>{{transaction.id}} and {{transaction.amount}}</p>
-        
-        {% endfor %}
+            <div class="transaction-item">
+                <p>{{transaction.amount}}</p>
+                <p>{{transaction.merchant.name}}</p>
+                <p>{{transaction.tag.name}}</p>
+            </div>
+
+        {% endfor %} 
+        </div>
+
+
     </div>
-
 
 </section>
     

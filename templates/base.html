@@ -17,7 +17,7 @@
     <head>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a class="nav-a-tag" href="/">Home</a></li>
                 <li><a href="/transactions">Show transactions</a></li>
                 <li><a href="/merchants">Show merchants</a></li>
                 <li><a href="/tags">Show tags</a></li>
@@ -26,21 +26,13 @@
 
     </head>
     <main>
-        <aside>
-
-            <h2>Add</h2>
-            <ul class="add-buttons">
-                <li><a href="/transactions/new">transaction</a></li>
-                <li><a href="/tags/new">tag</a></li>
-                <li><a href="/merchants/new">merchant</a></li>
-            </ul>
-
-            <h2>Edit</h2>
-            <div class = "edit-buttons">
-                <button>tag</button>
-                <button>merchant</button>
+        <aside id="add-container">
+            <div class="add-section">
+            <h2>Add:</h2>
+                <p class="button"><a href="/transactions/new">transaction</a></p>
+                <p class="button"><a href="/tags/new">tag</a></p>
+                <p class="button"><a href="/merchants/new">merchant</a></p>
             </div>
-
         </aside>
         <section id="right-side">
             {% block content %}
