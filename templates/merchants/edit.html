@@ -1,15 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<section id="edit-merchant-section">
 
-<form action="/merchants/{{merchant.id}}" method="post">
-    <div>
-        <label for="edit-merchant">Name:</label>
-        <input type="text" id="edit-merchant" name="edit-merchant" value={{merchant.name}} required autofocus>
+    <div id="edit-merchant-container">
+        <form action="/merchants/{{merchant.id}}" method="post">
+
+            <div>
+                <label for="edit-merchant">Name:</label>
+                <input type="text" id="edit-merchant" name="edit-merchant" value={{merchant.name}} required autofocus>
+            </div>
+
+            <button id="update-merchant-button" type="submit">Update Merchant</button>
+
+        </form> 
     </div>
 
-    <button type="submit">Update Merchant</button>
 
-</form>
+</section>
+
     
 {% endblock %}

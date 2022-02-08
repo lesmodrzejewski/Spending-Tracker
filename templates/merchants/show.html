@@ -2,9 +2,11 @@
 
 {% block content %}
 
-<div>
-    <p>{{merchant.name}}</p>
-    <p><a href="/merchants/{{merchant.id}}/edit">Edit Merchant</a></p>
-</div>
+<section id="show-merchant-section">
+    <div id="show-merchant-container">
+        <p>{{merchant.name}}</p>
+        <a href="/merchants/{{merchant.id}}/edit"><button>Edit Merchant</button> </a>
+    </div>
+</section>
     
 {% endblock %}

@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<section id="show-tag-section">
+    <div id="show-tag-container">
+        <p>{{tag.name}}</p>
+        <a href="/tags/{{tag.id}}/edit"><button>Edit Tag</button> </a>
+    </div>
+</section>
 
-<div>
-    <p>{{tag.name}}</p>
-    <p><a href="/tags/{{tag.id}}/edit">Edit Tag</a></p>
-</div>
     
 {% endblock %}
