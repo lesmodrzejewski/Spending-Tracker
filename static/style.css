@@ -71,8 +71,7 @@ footer {
     font-size: 1rem;
     height: 9vh;
     text-align: center;
-    padding-top: 2rem;
-    margin-top: 1px;
+    margin-top: 3px;
 }
 
 nav > ul {
@@ -107,7 +106,7 @@ aside > h2 {
     width: 100%;
     height: 100%;
     font-family: Quintessential;
-    font-size: 2.25rem;
+    font-size: 2.2rem;
 }
 
 .franklin-quote {
@@ -308,7 +307,7 @@ td {
 
 th,
 td {
-    padding: 5px;;
+    padding: 5px;
     border: 1px solid #f3f3f3;
 }
 
@@ -345,32 +344,8 @@ td {
     width: 19rem;
     margin-top: 1.5rem;
 }
-<<<<<<< HEAD
 
 @media (max-width: 500px) {
-    /* button {
-        width: 5rem;
-        font-size: 0.75rem;
-    }
-
-    #main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #add-container {
-        display: block;
-    }
-
-
-    .merchant-list h1 {
-        font-size: 1.25rem;
-    }
-
-    .merchant-list a {
-        font-size: 1rem;
-    } */
-
     
     body {
         width: 100vw;
@@ -378,8 +353,15 @@ td {
     main {
         display: flex;
         flex-direction: column;
-        height: 800px;
+        height: 700px;
     }
+
+    nav > ul > li {
+        font-size: 0.75rem;;
+        list-style: none;
+        margin-left: 1.5rem;
+    }
+
     #add-container {
         margin: auto;
 
@@ -392,7 +374,7 @@ td {
 
     .franklin-quote h1,
     .franklin-quote h2 {
-       display: none;
+       font-size: 1.75rem;;
     }
 
     .transactions-list h1 {
@@ -406,6 +388,28 @@ td {
     td {
         font-size: 1rem;
     }
+
+    /* MERCHANT INDEX */
+
+    .merchant-list h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .merchant-list a {
+        font-size: 1.1rem;
+
+    }
+
+    /* TAG INDEX */
+
+    .tags-list h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .tags-list a {
+        font-size: 1.1rem;
+
+    }
 }
-=======
->>>>>>> main
