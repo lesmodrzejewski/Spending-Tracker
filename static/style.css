@@ -307,6 +307,7 @@ td {
 
 th,
 td {
+    font-size: 1rem;
     padding: 5px;
     border: 1px solid #f3f3f3;
 }
