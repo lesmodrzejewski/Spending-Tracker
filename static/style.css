@@ -482,3 +482,19 @@ td {
 
     }
 }
+
+
+@media (orientation: landscape) {
+
+    .transactions-list h1 {
+        display: none
+     }
+ 
+     th {
+         font-size: 0.75rem;
+     }
+ 
+     td {
+         font-size: 0.75rem;
+     }
+  }
