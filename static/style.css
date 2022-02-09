@@ -43,6 +43,11 @@ select {
     border-radius: 5px;
 }
 
+input:focus {
+    outline: none;
+    background-color: rgb(225, 247, 248);
+}
+
 button:hover {
     background-color: rgb(0, 118, 145);
 }
@@ -340,5 +345,3 @@ td {
     width: 300px;
     margin-top: 20px;;
 }
-
-
