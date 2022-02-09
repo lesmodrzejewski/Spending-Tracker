@@ -8,18 +8,18 @@
         <form action="/transactions" method="post">
         
             <div id="add-transaction-form">
-                <label class="label" for="amount">amount</label>
+                <label class="label" for="amount">Amount</label>
                 <input type="text" name="amount" id="amount">
         
         
-                <label class="label" for="merchant-select">merchant</label>
+                <label class="label" for="merchant-select">Merchant</label>
                 <select name="merchant_id" id="merchant_select">
                     {% for merchant in merchants %}
                     <option value="{{merchant.id}}">{{merchant.name}}</option>
                     {% endfor %}
                 </select>
         
-                <label class="label" for="tag-select">tag</label>
+                <label class="label" for="tag-select">Tag</label>
                 <select name="tag_id" id="tag-select">
                     {% for tag in tags %}
                         <option value="{{tag.id}}">{{tag.name}}</option>
