@@ -19,14 +19,14 @@ a {
 }
 
 button {
-    width: 170px;
+    width: 9rem;
     text-align: left;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 1.25rem;;
     background-color: transparent;
     color: #f3f3f3;
     margin: 10px 0;
-    padding: 5px;;
+    padding: 5px;
     border: 1px solid #f3f3f3;
     border-radius: 5px;
 
@@ -38,8 +38,8 @@ select {
     font-family: Montserrat;
     padding: 0 15px;
     border: none;
-    width: 200px;
-    height: 30px;
+    width: 12.5rem;
+    height: 2rem;
     border-radius: 5px;
 }
 
@@ -63,10 +63,10 @@ main {
 }
 
 footer {
-    font-size: 15px;;
+    font-size: 1rem;
     height: 9vh;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 2rem;
     margin-top: 1px;
 }
 
@@ -78,12 +78,12 @@ nav > ul {
 
 nav > ul > li {
     list-style: none;
-    margin-left: 20px;;
+    margin-left: 1.5rem;
 }
 
 aside > h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 
 #add-container {
@@ -137,7 +137,7 @@ aside > h2 {
 }
 
 .merchant-list h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 #add-merchant {
@@ -154,7 +154,7 @@ aside > h2 {
 }
 
 #add-merchant-button {
-    width: 255px;
+    width: 16rem;
 }
 
 #edit-merchant-section {
@@ -171,7 +171,7 @@ aside > h2 {
 }
 
 #update-merchant-button {
-    width: 255px;
+    width: 16rem;
 }
 
 #show-merchant-section {
@@ -212,7 +212,7 @@ aside > h2 {
 }
 
 .tags-list h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 #add-tag {
@@ -229,7 +229,7 @@ aside > h2 {
 }
 
 #add-tag-button {
-    width: 255px;
+    width: 16rem;
 }
 
 #edit-tag-section {
@@ -246,7 +246,7 @@ aside > h2 {
 }
 
 #update-tag-button {
-    width: 235px;
+    width: 14.7rem;
 }
 
 #show-tag-section {
@@ -288,7 +288,7 @@ aside > h2 {
 }
 
 .transactions-list h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -313,14 +313,14 @@ td {
 }
 
 #add-transaction-header {
-    margin-bottom: 20px;;
+    margin-bottom: 1.5rem;
 }
 
 #add-transaction-form {
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 1.5rem;
 }
 
 #add-transaction-section {
@@ -337,8 +337,67 @@ td {
 }
 
 #add-transaction-button {
-    width: 300px;
-    margin-top: 20px;;
+    width: 19rem;
+    margin-top: 1.5rem;
 }
 
+@media (max-width: 500px) {
+    /* button {
+        width: 5rem;
+        font-size: 0.75rem;
+    }
 
+    #main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #add-container {
+        display: block;
+    }
+
+
+    .merchant-list h1 {
+        font-size: 1.25rem;
+    }
+
+    .merchant-list a {
+        font-size: 1rem;
+    } */
+
+    
+    body {
+        width: 100vw;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+    #add-container {
+        margin: auto;
+
+    }
+
+    .add-section {
+        position: relative;
+        padding-top: 2rem;;
+    }
+
+    .franklin-quote h1,
+    .franklin-quote h2 {
+       display: none;
+    }
+
+    .transactions-list h1 {
+       font-size: 1.5rem;;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+}
