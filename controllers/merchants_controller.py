@@ -1,4 +1,3 @@
-from asyncio.base_tasks import _task_print_stack
 from flask import Flask, render_template, Blueprint, request, redirect
 from models.merchant import Merchant
 

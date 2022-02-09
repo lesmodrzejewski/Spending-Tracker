@@ -11,8 +11,6 @@ def save(merchant):
     merchant.id = id
     return merchant
 
-# create a function that retrieves information 
-# about merchants from the database
 
 def select_all():
     merchants = []
