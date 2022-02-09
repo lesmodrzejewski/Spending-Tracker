@@ -484,7 +484,7 @@ td {
 }
 
 
-@media (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
 
     .transactions-list h1 {
         display: none
