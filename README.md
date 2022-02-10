@@ -16,4 +16,5 @@ The menu on the left allows adding transactions, tags or merchants.
 
 
 TECHNOLOGIES USED
+
 SPENDING TRACKER is a full stack application. The code of the application is written using postgreSQL, Python, Python's framework Flask and jinja Python's library. Psychopg2 database adaptor is used to connect the application with database.
